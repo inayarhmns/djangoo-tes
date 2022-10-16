@@ -1,1 +1,1 @@
-[link app](naysdjango.herokuapp.com)
+[link app](https://naysdjango.herokuapp.com/)
