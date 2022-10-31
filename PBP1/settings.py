@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'home',
     'TryingpxCode',
     'donation',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [
