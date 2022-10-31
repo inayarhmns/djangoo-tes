@@ -16,6 +16,7 @@ h1{
     color: #FFFFFF;
 
     text-shadow: 0px 0px 51px rgba(255, 255, 255, 0.25);
+    animation: slideUp .8s ease-in-out forwards .8s;
 }
 .bg {
     background-image: url("../img/unsplash_3Kwvejkutyg.png");
@@ -93,6 +94,7 @@ h1{
     /* or 39px */
     
     color: rgba(255, 255, 255, 0.72);
+    animation: slideUp .8s ease-in-out forwards .8s;
 }
 
 .see-more   {
@@ -113,8 +115,74 @@ h1{
     color: #FFFFFF;    
     float: right;
 }
+.river  {
+    background-color: aliceblue;
+    height: 400px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    
+}
+/* .linearmove {
+    animation: slideIn 4s  infinite;
+} */
+.box {  
+        align-self: center;
+        text-align: center;
+        background-color:  blue;
+        animation: wobble 1s ease infinite;
+        
+    }
+    @keyframes wobble {
+    0%, 100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
 
+    15% {
+        -webkit-transform: translateX(-32px) rotate(-10deg);
+        transform: translateX(-32px) rotate(-10deg);
+    }
 
+    30% {
+        -webkit-transform: translateX(calc(32px / 2)) rotate(10deg);
+        transform: translateX(calc(32px / 2)) rotate(10deg);
+    }
+
+    45% {
+        -webkit-transform: translateX(calc(-32px / 2)) rotate(calc(-10deg / 1.8));
+        transform: translateX(calc(-32px / 2)) rotate(calc(-10deg / 1.8));
+    }
+
+    60% {
+        -webkit-transform: translateX(calc(32px / 3.3)) rotate(calc(10deg / 3));
+        transform: translateX(calc(32px / 3.3)) rotate(calc(10deg / 3));
+    }
+
+    75% {
+        -webkit-transform: translateX(calc(-32px / 5.5)) rotate(calc(-10deg / 5));
+        transform: translateX(calc(-32px / 5.5)) rotate(calc(-10deg / 5));
+    }
+}
+      @keyframes slideIn {
+        0% {
+          transform: translateX(500px) scale(1);
+        }
+        100% {
+          transform: translateX(-500px) scale(1);
+        }
+      }
+@keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
 /* Untuk Smartphone */
 @media all and (max-width: 750px) {
     .see-more   {
@@ -138,4 +206,7 @@ h1{
     .navSamping.horizontal-text {
         display: none;
     }
+    
+    
+    
 }
